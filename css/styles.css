@@ -667,7 +667,7 @@ progress {
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container, .container-text {
-    max-width: 384px;
+    max-width: 100%;
   }
 
   .image{
@@ -676,7 +676,7 @@ progress {
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container, .container-text {
-    max-width: 480px;
+    max-width: 100%;
   }
 
   .image{
@@ -685,7 +685,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container, .container-text {
-    max-width: 600px;
+    max-width: 100%;
   }
 }
 @media (min-width: 1400px) {
@@ -709,7 +709,7 @@ progress {
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
-      padding-bottom: 50%;
+  padding-bottom: 50%;
 }
 
 .col {
@@ -10967,7 +10967,7 @@ header.masthead h1, header.masthead .h1 {
 }
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
+    height: 70em;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
