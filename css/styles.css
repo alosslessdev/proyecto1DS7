@@ -642,29 +642,55 @@ progress {
   margin-left: auto;
 }
 
+.container-text {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+}
+
+.container-image {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-left: auto;
+}
+
 @media (min-width: 576px) {
-  .container-sm, .container {
+  .container-sm, .container, .container-text {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container {
-    max-width: 720px;
+  .container-md, .container-sm, .container, .container-text {
+    max-width: 384px;
+  }
+
+  .image{
+    padding-right: 5%; 
   }
 }
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+  .container-lg, .container-md, .container-sm, .container, .container-text {
+    max-width: 480px;
+  }
+
+  .image{
+    padding-top: 15%; 
   }
 }
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+  .container-xl, .container-lg, .container-md, .container-sm, .container, .container-text {
+    max-width: 600px;
   }
 }
 @media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container, .container-text {
+    max-width: 50%;
   }
 }
 .row {
@@ -1297,7 +1323,7 @@ progress {
   }
   .col-lg-8 {
     flex: 0 0 auto;
-    width: 51%;
+    width: 100%;
   }
   .col-lg-9 {
     flex: 0 0 auto;
@@ -10929,7 +10955,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("/Sakamoto.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
