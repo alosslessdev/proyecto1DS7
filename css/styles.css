@@ -690,7 +690,7 @@ progress {
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container, .container-text {
-    max-width: 50%;
+    max-width: 100%;
   }
 }
 .row {
@@ -705,10 +705,11 @@ progress {
 .row > * {
   flex-shrink: 0;
   width: 100%;
-  max-width: 100%;
+  max-width: 50%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
+      padding-bottom: 50%;
 }
 
 .col {
